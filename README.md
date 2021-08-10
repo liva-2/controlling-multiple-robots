@@ -77,9 +77,11 @@ catkin_create_pkg multi_robot rospy gazebo_ros
 ```
 roslaunch multi_robot main.launch
 ```
-*Then you have to open the gazebo window from Tools->Gazebo
+* Then you have to open the gazebo window from Tools->Gazebo
 * you should see 2 robots are spawned in the simulation
 ## 5- Move the robot
+* Open another terminal and type:
 ```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py /cmd_vel:=/robot1/cmd_vel
 ```
+### now you can control the robots using teleop
